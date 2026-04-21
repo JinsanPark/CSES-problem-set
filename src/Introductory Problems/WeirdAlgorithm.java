@@ -15,14 +15,14 @@ public class WeirdAlgorithm {
             if (n % 2 == 0) {
 
                 n /= 2;
-                sb.append(n).append(" ");
 
             } else {
 
                 n = n * 3 + 1;
-                sb.append(n).append(" ");
 
             }
+
+            sb.append(n).append(" ");
 
         }
 
