@@ -18,7 +18,7 @@ public class Repetitions {
 
                 curCount++;
 
-            } else if (i < n - 1) {
+            } else {
 
                 curCount = 1;
 
