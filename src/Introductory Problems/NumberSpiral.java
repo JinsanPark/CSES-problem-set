@@ -9,17 +9,15 @@ public class NumberSpiral {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());
 
-
         StringBuilder sb = new StringBuilder();
-
 
         for (int i = 0; i < t; i++) {
 
             StringTokenizer st = new StringTokenizer(br.readLine());
             int x = Integer.parseInt(st.nextToken());
             int y = Integer.parseInt(st.nextToken());
-            int n = 0;
-            int a = 1;
+            long n = 0;
+            long a = 1;
 
             if (x > y) {
                 n = x;
@@ -27,21 +25,19 @@ public class NumberSpiral {
                 n = y;
             }
 
-            for (int j = 1; j < n; j++) {
-                a += j * 2;
-            }
+            a = n * n - n + 1;
 
             if (n % 2 == 0) {
                 if (x < n) {
-                    a -= 1;
+                    a -= n - x;
                 } else if (y < n) {
-                    a += 1;
+                    a += n - y;
                 }
             } else {
                 if (x < n) {
-                    a += 1;
+                    a += n - x;
                 } else if (y < n) {
-                    a -= 1;
+                    a -= n - y;
                 }
             }
 
@@ -53,4 +49,3 @@ public class NumberSpiral {
 
     }
 }
-//풀이중
