@@ -21,24 +21,19 @@ public class Permutations {
 
             for (int i = 0; i < n; i++) {
 
-
                 line[i] = input;
                 sb.append(input).append(" ");
                 input += 2;
 
                 if (isEvenToOdd && Math.abs(line[i] - line[i - 1]) == 1) {
-
                     System.out.println("NO SOLUTION");
                     check = false;
                     break;
-
                 }
 
                 if (input > n) {
-
                     input = 1;
                     isEvenToOdd = true;
-
                 }
 
             }

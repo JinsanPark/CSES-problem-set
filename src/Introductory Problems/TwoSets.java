@@ -5,6 +5,8 @@ import java.io.InputStreamReader;
 public class TwoSets {
     public static void main(String[] args) throws IOException {
 
+        //좀 더 친절한 변수명이 필요함.
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         long sum = (long) n * (n + 1) / 2;

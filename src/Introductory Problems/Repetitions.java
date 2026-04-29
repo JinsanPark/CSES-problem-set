@@ -15,25 +15,18 @@ public class Repetitions {
         for (int i = 0; i < n; i++) {
 
             if (i < n - 1 && line[i] == line[i + 1]) {
-
                 curCount++;
-
             } else {
-
                 curCount = 1;
-
             }
 
             if (curCount > biggestCount) {
-
                 biggestCount = curCount;
-
             }
 
         }
 
         System.out.println(biggestCount);
-
 
     }
 

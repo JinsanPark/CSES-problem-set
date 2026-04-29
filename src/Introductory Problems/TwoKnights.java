@@ -14,6 +14,8 @@ public class TwoKnights {
 
             long square = (long)i * i;
 
+
+            //분기가 정말 필요한지 다시 한번 생각해 볼 것.
             if (i == 1) {
                 sb.append(0).append("\n");
             } else if (i == 2) {
