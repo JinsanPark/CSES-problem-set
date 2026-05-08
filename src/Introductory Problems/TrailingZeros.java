@@ -7,12 +7,11 @@ public class TrailingZeros {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        int square = 5;
-        int result = n / 5;
+        int result = 0;
 
-        while (n >= square) {
-            result += n / (square * 5);
-            square *= 5;
+        while (n > 0) {
+            n /= 5;
+            result += n;
         }
 
         System.out.println(result);
