@@ -9,12 +9,10 @@ public class IncreasingArray {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         int[] line = new int[n];
-
         StringTokenizer st = new StringTokenizer(br.readLine());
+
         for (int i = 0; i < n; i++) {
-
             line[i] = Integer.parseInt(st.nextToken());
-
         }
 
         long count = 0;
